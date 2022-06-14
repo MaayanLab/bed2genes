@@ -12,6 +12,8 @@ $ pip install git+https://github.com/MaayanLab/bed2genes.git
 
 ### Python example
 
+The input bed file has 5 columns, the first column is the chromosome name (e.g. chr1, or 1), followed by peak start. All other columns are not relevant for bed2genes and will be carried over into the final output.
+
 ```python
 import bed2genes
 import pandas as pd
