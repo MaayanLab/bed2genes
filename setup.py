@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="bed2genes",
-    version="0.1.1",
+    version="0.1.2",
     author="Alexander Lachmann",
     author_email="alexander.lachmann@mssm.edu",
     description="Package for turning bed files into gene lists.",
