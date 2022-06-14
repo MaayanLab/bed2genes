@@ -1,5 +1,5 @@
 
-    chromosome peak_start peak_end    info    strength
+chromosome	peak_start	peak_end	info	strength
 chr9	61904376	61904377	multiGPS	1000
 chr4	41630370	41630371	multiGPS	1000
 chr4	73047985	73047986	multiGPS	1000
