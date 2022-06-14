@@ -23,7 +23,7 @@ urllib.request.urlretrieve(url, "example.bed")
 
 bed = pd.read_csv("example.bed", sep="\t")
 
-bed_genes = map_genes(bed, species="human", upstream_distance=-2000, downstream_distance=500, reload=False)
+bed_genes = bed2genes.map_genes(bed, species="human", upstream_distance=-2000, downstream_distance=500, reload=False)
 ```
 
 ### Optional Parameters
