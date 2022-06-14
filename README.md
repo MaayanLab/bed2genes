@@ -22,7 +22,7 @@ url = "https://raw.githubusercontent.com/MaayanLab/bed2genes/main/bed2genes/data
 urllib.request.urlretrieve(url, "example.bed")
 
 bed = pd.read_csv("example.bed", sep="\t")
-https://raw.githubusercontent.com/MaayanLab/bed2genes/main/bed2genes/data/example.bed
+
 bed_genes = map_genes(bed, species="human", upstream_distance=-2000, downstream_distance=500, reload=False)
 ```
 
