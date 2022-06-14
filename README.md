@@ -18,11 +18,11 @@ import pandas as pd
 import urllib.request
 
 # download example gene expression signature
-url = "https://github.com/MaayanLab/bed2genes/raw/main/testing/ageing_muscle_gtex.tsv"
+url = "https://raw.githubusercontent.com/MaayanLab/bed2genes/main/bed2genes/data/example.bed"
 urllib.request.urlretrieve(url, "example.bed")
 
-bed = pd.read_csv("example.bed")
-
+bed = pd.read_csv("example.bed", sep="\t")
+https://raw.githubusercontent.com/MaayanLab/bed2genes/main/bed2genes/data/example.bed
 bed_genes = map_genes(bed)
 ```
 
