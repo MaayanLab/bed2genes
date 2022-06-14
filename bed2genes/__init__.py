@@ -43,6 +43,8 @@ def find_gene(pos, arr, start, end, d=float('inf')):
         return find_gene(pos, arr, start, pivot, md)
 
 def map_genes(bed, upstream_distance=-2000, downstream_distance=500, species="human", reload=False):
+    bed.iloc[:,0] = bed.iloc[:,0].str.replace("chr","")
+    print(bed)
     chrs = load_gene_info(species, reload)
     res = []
     for i in tqdm.tqdm(range(bed.shape[0])):
