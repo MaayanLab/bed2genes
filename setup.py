@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="bed2genes",
-    version="0.1.2",
+    version="0.1.3",
     author="Alexander Lachmann",
     author_email="alexander.lachmann@mssm.edu",
     description="Package for turning bed files into gene lists.",
@@ -25,7 +25,8 @@ setuptools.setup(
     install_requires=[
         'pandas>=1.1.5',
         'tqdm',
-        'numpy'
+        'numpy',
+        'pybiomart'
     ],
     python_requires='>=3.6',
 )
